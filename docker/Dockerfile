@@ -1,5 +1,5 @@
 FROM node:lts-alpine
-ARG JD_SHELL_URL=https://hub.fastgit.org/DX3242/jd-base
+ARG JD_SHELL_URL=https://hub.fastgit.org/DX3242/jd-base0
 ARG JD_SHELL_BRANCH=main
 ARG JD_SCRIPTS_URL=https://gitee.com/ZFeng3242/JD-haoyangmao
 ARG JD_SCRIPTS_BRANCH=main
