@@ -95,6 +95,8 @@ function Combin_All {
   export JDCFD_SHARECODES=$(Combin_Sub ForOtherCfd)
   export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherhealth)
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity)
+  export JDZOO_SHARECODES=$(Combin_Sub ForOtherZoo)
+  export JDZOOPK_SHARECODES=$(Combin_Sub ForOtherZooPk)
 }
 
 ## 转换JD_BEAN_SIGN_STOP_NOTIFY或JD_BEAN_SIGN_NOTIFY_SIMPLE
@@ -180,7 +182,7 @@ function Run_HangUp {
 ## 重置密码
 function Reset_Pwd {
   cp -f ${ShellDir}/sample/auth.json ${ConfigDir}/auth.json
-  echo -e "控制面板重置成功，用户名：admin，密码：ZFeng3242\n"
+  echo -e "控制面板重置成功，用户名：admin，密码：shuye72\n"
 }
 
 ## 运行脚本
