@@ -1,6 +1,6 @@
-## Version: v3.37.0
-## Date: 2021-05-24
-## Update Content: 增加| CITY_SHARECODES |环境变量为城城分现金助力码（配置文件更新不会自动替换,请利用对比工具手动对比更新）
+## Version: v3.30.0
+## Date: 2021-03-14
+## Update Content: 增加三个通知控制变量DDQ_NOTIFY_CONTROL,CASH_NOTIFY_CONTROL和JDZZ_NOTIFY_CONTROL
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 
@@ -107,7 +107,7 @@ export DD_BOT_SECRET=""
 ## 5. iGot聚合推送，支持多方式推送，填写iGot的推送key。教程：https://wahao.github.io/Bark-MP-helper/#/
 export IGOT_PUSH_KEY=""
 
-## 6. Push Plus，微信扫码登录后一对一推送或一对多推送，参考文档：http://www.pushplus.plus
+## 6. Push Plus，微信扫码登录后一对一推送或一对多推送，参考文档：http://pushplus.hxtrip.com/
 ## 其中PUSH_PLUS_USER是一对多推送的“群组编码”（一对多推送下面->您的群组(如无则新建)->群组编码）注:(1、需订阅者扫描二维码 2、如果您是创建群组所属人，也需点击“查看二维码”扫描绑定，否则不能接受群组消息推送)，只填PUSH_PLUS_TOKEN默认为一对一推送
 export PUSH_PLUS_TOKEN=""
 export PUSH_PLUS_USER=""
@@ -133,41 +133,12 @@ NotifyBeanSign=""
 export JD_BEAN_STOP=""
 
 
-################################## 定义jd_city互助（临时） ##################################
-## 具体填法及要求详见本文件最下方“互助码填法示例”
-MyCity1=""
-MyCity2=""
-MyCity3=""
-MyCity4=""
-MyCity5=""
-MyCity6=""
-MyCityA=""
-MyCityB=""
+################################## 自动按顺序进行账号间互助（选填） ##################################
+## 设置为 true 时，以下所有互助活动，账号间将按照config.sh中Cookie顺序进行互助，此时，不会助力不在config.sh中的账号，无法和别人交换助力
+## MyXxxx系列变量仍然需要填写，但ForOtherXxxx系列变量不再需要填写（填写了也无效）
+## 如果启用了TempBlockCookie，那么只是被屏蔽的账号不助力其他账号，其他账号还是会助力被屏蔽的账号
+AutoHelpOther=""
 
-ForOtherCity1=""
-ForOtherCity2=""
-ForOtherCity3=""
-ForOtherCity4=""
-ForOtherCity5=""
-ForOtherCity6=""
-
-################################## 定义jd_health互助（临时） ##################################
-## 具体填法及要求详见本文件最下方“互助码填法示例”
-Myhealth1=""
-Myhealth2=""
-Myhealth3=""
-Myhealth4=""
-Myhealth5=""
-Myhealth6=""
-MyhealthA=""
-MyhealthB=""
-
-ForOtherhealth1=""
-ForOtherhealth2=""
-ForOtherhealth3=""
-ForOtherhealth4=""
-ForOtherhealth5=""
-ForOtherhealth6=""
 
 ################################## 定义jd_fruit互助（选填） ##################################
 ## 具体填法及要求详见本文件最下方“互助码填法示例”
@@ -410,15 +381,25 @@ ForOtherCfd4=""
 ForOtherCfd5=""
 ForOtherCfd6=""
 
-################################## 定义jd_super_redrain通知（选填） ##################################
-## 默认开启false为关闭
 
-export RAIN_NOTIFY_CONTROL=""
+################################## 定义jd_global活动互助（选填） ##################################
+## 具体填法及要求详见本文件最下方“互助码填法示例”
+MyGlobal1=""
+MyGlobal2=""
+MyGlobal3=""
+MyGlobal4=""
+MyGlobal5=""
+MyGlobal6=""
+MyGlobalA=""
+MyGlobalB=""
 
-################################## 定义jd_cash京豆兑换（选填） ##################################
-## jd_cash京豆兑换，花费2元红包兑换200京豆，一周可换四次；
+ForOtherGlobal1=""
+ForOtherGlobal2=""
+ForOtherGlobal3=""
+ForOtherGlobal4=""
+ForOtherGlobal5=""
+ForOtherGlobal6=""
 
-export CASH_EXCHANGE=""
 
 ################################## 定义jd_superMarket蓝币兑换数量（选填） ##################################
 ## jd_superMarket蓝币兑换，可用值包括：
@@ -604,7 +585,7 @@ export JDJOY_APPLYJDBEAN=""
 
 
 ################################## 定义是否自动加购物车（选填） ##################################
-## jd_small_home，和jd_jump有些任务需要将商品加进购物车才能完成，默认 "false" 不做这些任务，如想做，请设置为 "true"
+## jd_bookshop和jd_small_home有些任务需要将商品加进购物车才能完成，默认 "false" 不做这些任务，如想做，请设置为 "true"
 export PURCHASE_SHOPS=""
 
 
