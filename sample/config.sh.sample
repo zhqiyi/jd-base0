@@ -131,42 +131,6 @@ NotifyBeanSign=""
 ## 默认每个签到接口并发无延迟，如需要依次进行每个接口，请自定义延迟时间，单位为毫秒，延迟作用于每个签到接口, 如填入延迟则切换顺序签到(耗时较长)
 export JD_BEAN_STOP=""
 
-################################## 定义jd_zoo Pk互助（临时） ##################################
-## 具体填法及要求详见本文件最下方“互助码填法示例”
-MyZooPk1=""
-MyZooPk2=""
-MyZooPk3=""
-MyZooPk4=""
-MyZooPk5=""
-MyZooPk6=""
-MyZooPkA=""
-MyZooPkB=""
-
-ForOtherZooPk1=""
-ForOtherZooPk2=""
-ForOtherZooPk3=""
-ForOtherZooPk4=""
-ForOtherZooPk5=""
-ForOtherZooPk6=""
-
-################################## 定义jd_zoo 个人互助（临时） ##################################
-## 具体填法及要求详见本文件最下方“互助码填法示例”
-MyZoo1=""
-MyZoo2=""
-MyZoo3=""
-MyZoo4=""
-MyZoo5=""
-MyZoo6=""
-MyZooA=""
-MyZooB=""
-
-ForOtherZoo1=""
-ForOtherZoo2=""
-ForOtherZoo3=""
-ForOtherZoo4=""
-ForOtherZoo5=""
-ForOtherZoo6=""
-
 ################################## 定义jd_city抽奖开关（选填） ##################################
 ## 默认false不抽奖，改为true抽奖
 export JD_CITY_EXCHANGE=""
